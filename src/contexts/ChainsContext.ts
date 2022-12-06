@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { createContext } from "./createContext";
 
 export const getChains = () =>
-  fetch("https://assets.terra.money/chains.json")
+  fetch("https://assets.terrarebels.net/chains.json")
     .then(res => res.json())
     .then((data: Record<string, ChainOption>) => Object.values(data));
 
@@ -15,12 +15,12 @@ const useNetworkFromRouteMatch = () => {
 };
 
 export const useCurrentChain = () => {
-  const chains:ChainOption[] = useChains();
+  const chains: ChainOption[] = useChains();
   const network = useNetworkFromRouteMatch();
 
   const chain =
     chains.find(chain => chain.name === network || chain.chainID === network) ??
-    chains.find(chain => chain.name === "mainnet"); // return mainnet for default chain
+    chains.find(chain => chain.name === "classic"); // return classic for default chain
 
   if (!chain) {
     throw new Error("Chain is not defined");

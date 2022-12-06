@@ -1,8 +1,8 @@
-# Terra Finder
+# Terra Rebels Finder
 
 ![banner](./terra-finder.png)
 
-Terra Finder is a tool to search through blocks, transactions, and accounts on the Terra blockchain.
+Terra Rebels Finder is a tool to search through blocks, transactions, and accounts on the Terra blockchain.
 
 Finder is derived from the [Cosmos Explorer](https://github.com/cosmos/explorer).
 
