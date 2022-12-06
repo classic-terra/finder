@@ -2,7 +2,11 @@
 
 .header {
   position: relative;
-  background: #0c3694;
+  background: linear-gradient(
+    180deg,
+    rgba(23, 40, 81, 1) 0%,
+    rgba(26, 26, 27, 1) 100%
+  );
   height: 80px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   @media (max-width: $breakpoint) {
@@ -20,7 +24,6 @@
 .logo {
   display: inline-block;
   @media (max-width: $breakpoint) {
-    display: block;
     height: 45px;
     line-height: 45px;
     padding: 0;
@@ -31,15 +34,15 @@
   }
   a {
     display: block;
-    padding: 28px 40px;
+    padding: 18px 40px;
     line-height: 1;
     @media (max-width: $breakpoint) {
       padding: 13px 15px;
     }
   }
   img {
-    width: 160px;
-    height: 21px;
+    width: 220px;
+    height: 41px;
     @media (max-width: $breakpoint) {
       height: 15px;
       width: 116px;

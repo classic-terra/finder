@@ -21,7 +21,11 @@
   height: auto;
   z-index: -99;
   transform: translateX(-50%) translateY(-50%);
-  background: rgba(8, 32, 128, 0.85);
+  background: linear-gradient(
+    180deg,
+    rgba(23, 40, 81, 0.85) 0%,
+    rgba(26, 26, 27, 0.85) 100%
+  );
 }
 
 .background {
@@ -56,7 +60,7 @@
   margin-top: -130px;
   padding-bottom: 80px;
   > img {
-    width: 264px;
+    width: 864px;
     height: 134px;
     @media (max-width: $breakpoint) {
       width: 196px;
