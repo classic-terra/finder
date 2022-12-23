@@ -21,6 +21,18 @@
   position: relative;
 }
 
+.subtitle {
+  padding-left: 2.55rem;
+  margin-top: -0.2rem;
+  font-size: 0.8rem;
+  color: #fff;
+  @media (max-width: $breakpoint) {
+    font-size: 0.6rem;
+    padding-left: 1.45rem;
+    margin-top: 0.1rem;
+  }
+}
+
 .logo {
   display: inline-block;
   @media (max-width: $breakpoint) {
@@ -32,6 +44,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+
   a {
     display: block;
     padding: 18px 40px;
