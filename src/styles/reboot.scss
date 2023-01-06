@@ -12,6 +12,7 @@ body {
   letter-spacing: -0.2px;
   -webkit-tap-highlight-color: transparent;
   word-break: break-word;
+  background-color: #162852;
 }
 
 hr {
@@ -25,7 +26,7 @@ a {
   color: $link-bg;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

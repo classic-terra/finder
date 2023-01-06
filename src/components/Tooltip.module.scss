@@ -29,16 +29,16 @@
   }
 
   &.top:after {
-    border-top-color: $brand;
+    border-top-color: $line;
   }
 
   &.bottom:before {
-    border-bottom-color: $brand;
+    border-bottom-color: $line;
   }
 }
 
 .content {
-  background: $brand;
+  background: $line;
   border-radius: 5px;
   color: white;
   padding: 10px 12px;

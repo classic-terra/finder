@@ -6,7 +6,7 @@ $padding: 25px;
 $padding-small: 20px;
 
 .card {
-  background: white;
+  background: #1b1f28;
 
   @media (max-width: $breakpoint - 1) {
     box-shadow: 0 1px 5px 0 $box-shadow;
