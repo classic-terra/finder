@@ -12,6 +12,7 @@ const Header = () => (
       <div className={s.logo}>
         <Link to="/">
           <img src={logo} alt="logo" />
+          <div className={s.subtitle}>Block Explorer</div>
         </Link>
       </div>
       <Search className={s.search} />

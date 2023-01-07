@@ -16,7 +16,7 @@
   text-transform: capitalize;
   option {
     color: $brand;
-    background: #fff;
+    background: $line;
     text-transform: capitalize;
   }
   @media (max-width: $breakpoint) {
