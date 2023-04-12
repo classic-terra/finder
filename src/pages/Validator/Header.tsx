@@ -1,6 +1,6 @@
 import React from "react";
 import c from "classnames";
-import { readPercent, readAmount } from "@terra.kitchen/utils";
+import { readPercent, readAmount } from "@terra-rebels/kitchen-utils";
 import { prependProtocol } from "../../scripts/utility";
 import Amount from "../../components/Amount";
 import Card from "../../components/Card";

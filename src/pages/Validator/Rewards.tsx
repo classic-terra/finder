@@ -1,6 +1,6 @@
 import React from "react";
 import { isEmpty } from "lodash";
-import { Coin } from "@terra-money/terra.js";
+import { Coin } from "@terra-rebels/terra.js";
 import Table from "../../components/Table";
 import Amount from "../../components/Amount";
 import Card from "../../components/Card";

@@ -1,4 +1,4 @@
-import { Account, BlockInfo } from "@terra-money/terra.js";
+import { Account, BlockInfo } from "@terra-rebels/terra.js";
 import { div, min, minus, mul, plus } from "./math";
 
 const getVesting = (

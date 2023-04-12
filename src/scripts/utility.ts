@@ -4,8 +4,8 @@ import isBase64 from "is-base64";
 import { Dictionary } from "ramda";
 import { countries, Country } from "countries-list";
 import { filter } from "lodash";
-import { Coin, Coins } from "@terra-money/terra.js";
-import { isDenomIBC } from "@terra.kitchen/utils";
+import { Coin, Coins } from "@terra-rebels/terra.js";
+import { isDenomIBC } from "@terra-rebels/kitchen-utils";
 import { isInteger } from "./math";
 import { isTnsName } from "../libs/tns";
 

@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { path, uniqBy } from "ramda";
 /* TODO: Fix terra.js */
-import { BondStatus } from "@terra-money/terra.proto/cosmos/staking/v1beta1/staking";
+import { BondStatus } from "@terra-rebels/terra.proto/cosmos/staking/v1beta1/staking";
 import useLCDClient from "../hooks/useLCD";
 import { Pagination, RefetchOptions } from "./query";
 

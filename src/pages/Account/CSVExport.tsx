@@ -4,7 +4,7 @@ import {
   LogFinderAmountResult,
   getTxAmounts,
   createLogMatcherForAmounts
-} from "@terra-money/log-finder-ruleset";
+} from "@terra-rebels/log-finder-ruleset";
 import format from "../../scripts/format";
 import s from "./CSVExport.module.scss";
 import {

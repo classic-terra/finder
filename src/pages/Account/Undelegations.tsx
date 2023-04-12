@@ -1,4 +1,4 @@
-import { readAmount } from "@terra.kitchen/utils";
+import { readAmount } from "@terra-rebels/kitchen-utils";
 import Card from "../../components/Card";
 import FlexTable from "../../components/FlexTable";
 import ValidatorStatus from "../../components/ValidatorStatus";

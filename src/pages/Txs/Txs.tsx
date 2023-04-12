@@ -1,5 +1,5 @@
 import { get, isEmpty } from "lodash";
-import { TxInfo } from "@terra-money/terra.js";
+import { TxInfo } from "@terra-rebels/terra.js";
 import FlexTable from "../../components/FlexTable";
 import Info from "../../components/Info";
 import Card from "../../components/Card";

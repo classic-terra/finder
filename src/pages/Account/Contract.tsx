@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { useParams } from "react-router-dom";
-import { ContractInfo as Props } from "@terra-money/terra.js";
+import { ContractInfo as Props } from "@terra-rebels/terra.js";
 import Flex from "../../components/Flex";
 import Card from "../../components/Card";
 import Table from "../../components/Table";

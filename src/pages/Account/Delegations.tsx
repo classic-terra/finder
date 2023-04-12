@@ -1,4 +1,4 @@
-import { readAmount } from "@terra.kitchen/utils";
+import { readAmount } from "@terra-rebels/kitchen-utils";
 import { getFindMoniker } from "../../queries/validator";
 import { useDelegations, useValidators } from "../../queries/staking";
 import { useStakingRewards } from "../../queries/distribution";

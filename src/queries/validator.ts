@@ -5,10 +5,10 @@ import {
   AccAddress,
   DelegateValidator,
   Validator
-} from "@terra-money/terra.js";
+} from "@terra-rebels/terra.js";
 /* FIXME(terra.js): Import from terra.js */
-import { BondStatus } from "@terra-money/terra.proto/cosmos/staking/v1beta1/staking";
-import { bondStatusFromJSON } from "@terra-money/terra.proto/cosmos/staking/v1beta1/staking";
+import { BondStatus } from "@terra-rebels/terra.proto/cosmos/staking/v1beta1/staking";
+import { bondStatusFromJSON } from "@terra-rebels/terra.proto/cosmos/staking/v1beta1/staking";
 import { useDelegation } from "./staking";
 import { useTerraValidators } from "./TerraAPI";
 import { TerraValidator } from "../types/validator";

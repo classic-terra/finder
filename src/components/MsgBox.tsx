@@ -1,7 +1,7 @@
 import { useState } from "react";
 import c from "classnames/bind";
-import { AccAddress, ValAddress } from "@terra-money/terra.js";
-import { LogFinderActionResult } from "@terra-money/log-finder-ruleset";
+import { AccAddress, ValAddress } from "@terra-rebels/terra.js";
+import { LogFinderActionResult } from "@terra-rebels/log-finder-ruleset";
 import CoinComponent from "../components/Coin";
 import { sliceMsgType } from "../scripts/utility";
 import Action from "../pages/Tx/Action";

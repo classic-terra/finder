@@ -4,8 +4,8 @@ import {
   LogFinderAmountResult,
   getTxAmounts,
   createLogMatcherForAmounts
-} from "@terra-money/log-finder-ruleset";
-import { TxInfo } from "@terra-money/terra.js";
+} from "@terra-rebels/log-finder-ruleset";
+import { TxInfo } from "@terra-rebels/terra.js";
 import Pagination from "../../components/Pagination";
 import FlexTable from "../../components/FlexTable";
 import Card from "../../components/Card";
@@ -18,7 +18,7 @@ import { useCurrentChain, useIsClassic } from "../../contexts/ChainsContext";
 import {
   fromISOTime,
   sliceMsgType,
-  splitCoinData,
+  splitCoinData
 } from "../../scripts/utility";
 import format from "../../scripts/format";
 import { useLogfinderAmountRuleSet } from "../../hooks/useLogfinder";

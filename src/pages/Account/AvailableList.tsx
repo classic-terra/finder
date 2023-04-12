@@ -1,4 +1,4 @@
-import { Coin } from "@terra-money/terra.js";
+import { Coin } from "@terra-rebels/terra.js";
 import { useRecoilValue } from "recoil";
 import { useFCDURL, useIsClassic } from "../../contexts/ChainsContext";
 import useRequest from "../../hooks/useRequest";

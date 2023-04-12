@@ -1,4 +1,4 @@
-import { Validator } from "@terra-money/terra.js";
+import { Validator } from "@terra-rebels/terra.js";
 
 interface TerraValidator extends Validator.Data {
   picture?: string;

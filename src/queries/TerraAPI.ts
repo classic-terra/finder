@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useQuery } from "react-query";
 import axios, { AxiosError } from "axios";
 import BigNumber from "bignumber.js";
-import { OracleParams, ValAddress } from "@terra-money/terra.js";
+import { OracleParams, ValAddress } from "@terra-rebels/terra.js";
 import { useCurrentChain } from "../contexts/ChainsContext";
 import { RefetchOptions } from "./query";
 import { TerraValidator } from "../types/validator";
