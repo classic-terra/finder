@@ -7,19 +7,8 @@ interface Item {
   isClassic?: boolean;
 }
 
-const stringify = (msg: object) => JSON.stringify(msg).replace(/"/g, '\\"');
-
-const aliasItem = ({ contract, msg, isClassic, address }: Item) =>
-  isClassic
-    ? `
-    ${contract}: WasmContractsContractAddressStore(
-      ContractAddress: "${contract}"
-      QueryMsg: "${stringify(msg)}"
-    ) {
-      Height
-      Result
-    }`
-    : `${contract}: wasm{
+const aliasItem = ({ contract, address }: Item) =>
+  `${contract}: wasm{
       contractQuery( 
         contractAddress: "${contract}"
         query: {

@@ -21,30 +21,19 @@ export type Tokens = Dictionary<Token>;
 // classic data type is { Result: string }
 // v2 data type is { contractQuery: { balance: string } }
 const parseResult = (
-  data: Dictionary<{ Result: string; contractQuery: { balance: string } }>,
-  isClassic?: boolean
+  data: Dictionary<{ Result: string; contractQuery: { balance: string } }>
 ) => {
   const removeEmptyObject = Object.fromEntries(
     Object.entries(data).filter(([_, value]) => value !== null)
   );
 
-  const result = isClassic
-    ? Object.entries(removeEmptyObject).reduce(
-        (acc, [token, { Result }]) => ({
-          ...acc,
-          [token]: JSON.parse(Result).balance
-        }),
-        {}
-      )
-    : Object.entries(removeEmptyObject).reduce(
-        (acc, [token, { contractQuery }]) => ({
-          ...acc,
-          [token]: contractQuery.balance
-        }),
-        {}
-      );
-
-  return result;
+  return Object.entries(removeEmptyObject).reduce(
+    (acc, [token, { contractQuery }]) => ({
+      ...acc,
+      [token]: contractQuery.balance
+    }),
+    {}
+  );
 };
 
 const useTokenBalance = (
@@ -79,7 +68,7 @@ const useTokenBalance = (
             errorPolicy: "ignore"
           });
 
-          setResult(parseResult(data, isClassic));
+          setResult(parseResult(data));
         } catch (error) {
           setResult({});
         }
