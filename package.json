@@ -47,7 +47,7 @@
     "@terra-rebels/log-finder": "^1.0.0",
     "@terra-rebels/log-finder-ruleset": "^0.9.1",
     "@terra-rebels/react-base-components": "^1.0.2",
-    "@terra-rebels/terra.js": "^1.0.1",
+    "@terra-rebels/terra.js": "^1.0.2",
     "@terra-rebels/kitchen-utils": "^1.0.0",
     "@types/recoil": "^0.0.9",
     "ace-builds": "^1.4.12",
