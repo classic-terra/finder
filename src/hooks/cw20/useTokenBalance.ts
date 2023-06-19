@@ -54,21 +54,32 @@ const useTokenBalance = (
             cache: new InMemoryCache()
           });
 
-          const queries = alias(
-            Object.entries(whitelist).map(([key]) => ({
-              contract: key,
-              msg: { balance: { address } },
-              isClassic,
-              address
-            }))
-          );
+          const queries = [],
+            chunk_size = 49;
+          for (const i = Object.entries(whitelist); i.length; ) {
+            queries.push(
+              alias(
+                i.splice(0, chunk_size).map(([key]) => ({
+                  contract: key,
+                  msg: { balance: { address } },
+                  isClassic,
+                  address
+                }))
+              )
+            );
+          }
 
-          const { data } = await client.query({
-            query: queries,
-            errorPolicy: "ignore"
-          });
+          let results = {};
+          for (let x = 0; x < queries.length; x++) {
+            const { data } = await client.query({
+              query: queries[x],
+              errorPolicy: "ignore"
+            });
 
-          setResult(parseResult(data));
+            Object.assign(results, data);
+          }
+
+          setResult(parseResult(results));
         } catch (error) {
           setResult({});
         }
