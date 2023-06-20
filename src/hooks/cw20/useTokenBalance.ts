@@ -30,7 +30,7 @@ const parseResult = (
   return Object.entries(removeEmptyObject).reduce(
     (acc, [token, { contractQuery }]) => ({
       ...acc,
-      [token]: contractQuery.balance
+      [token]: contractQuery.balance || "0"
     }),
     {}
   );
