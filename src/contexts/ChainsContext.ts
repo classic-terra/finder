@@ -20,7 +20,7 @@ export const useCurrentChain = () => {
 
   const chain =
     chains.find(chain => chain.name === network || chain.chainID === network) ??
-    chains.find(chain => chain.name === "classic"); // return classic for default chain
+    chains.find(chain => chain.name === "mainnet");
 
   if (!chain) {
     throw new Error("Chain is not defined");
