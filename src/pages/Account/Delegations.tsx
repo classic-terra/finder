@@ -30,30 +30,32 @@ const Delegations = ({ address }: { address: string }) => {
     const denom = format.denom(balance.denom, isClassic);
     const stakingRewards = rewards?.rewards[validator_address]?.toArray();
 
-    return [
-      <span>
-        <Finder
-          q="validator"
-          v={validator_address}
-          children={moniker ?? validator_address}
-        />
-      </span>,
-      <span>
-        <ValidatorStatus validatorAddress={validator_address} />
-      </span>,
-      <span>{[amount, denom].join(" ")}</span>,
-      <div>
-        {stakingRewards && Array.isArray(stakingRewards) && (
-          <ul>
-            {stakingRewards.map(({ denom, amount }, index) => (
-              <li key={index}>
-                <Amount denom={denom}>{amount.toString()}</Amount>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-    ];
+    return amount !== "0"
+      ? [
+          <span>
+            <Finder
+              q="validator"
+              v={validator_address}
+              children={moniker ?? validator_address}
+            />
+          </span>,
+          <span>
+            <ValidatorStatus validatorAddress={validator_address} />
+          </span>,
+          <span>{[amount, denom].join(" ")}</span>,
+          <div>
+            {stakingRewards && Array.isArray(stakingRewards) && (
+              <ul>
+                {stakingRewards.map(({ denom, amount }, index) => (
+                  <li key={index}>
+                    <Amount denom={denom}>{amount.toString()}</Amount>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ]
+      : [];
   });
 
   const head = [`Validator`, `Status`, `Amount`, `Rewards`];
