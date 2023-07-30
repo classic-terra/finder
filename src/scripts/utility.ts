@@ -11,7 +11,7 @@ import { isTnsName } from "../libs/tns";
 
 export const DEFAULT_CURRENCY = `uusd`;
 export const BASE_DENOM = `uluna`;
-export const ASSET_URL = "https://assets.terraclassic-community";
+export const ASSET_URL = "https://assets.terraclassic.community";
 export const TERRA_ADDRESS_REGEX = /(terra[0-9][a-z0-9]{38})/g;
 export const LOCALTERRA_FCD_URL = "http://localhost:3060";
 
