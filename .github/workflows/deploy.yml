@@ -1,4 +1,4 @@
-name: Deploy Rebel Finder
+name: Deploy Terra Classic Finder
 on:
   push:
     branches:
