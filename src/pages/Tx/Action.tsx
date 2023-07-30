@@ -1,4 +1,4 @@
-import { TxDescription } from "@terra-rebels/react-base-components";
+import { TxDescription } from "@terraclassic-community/react-base-components";
 import { useCurrentChain } from "../../contexts/ChainsContext";
 import useLCDClient from "../../hooks/useLCD";
 import s from "./Action.module.scss";

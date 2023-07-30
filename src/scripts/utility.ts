@@ -4,14 +4,14 @@ import isBase64 from "is-base64";
 import { Dictionary } from "ramda";
 import { countries, Country } from "countries-list";
 import { filter } from "lodash";
-import { Coin, Coins } from "@terra-rebels/terra.js";
-import { isDenomIBC } from "@terra-rebels/kitchen-utils";
+import { Coin, Coins } from "@terraclassic-community/terra.js";
+import { isDenomIBC } from "@terra-money/terra-utils";
 import { isInteger } from "./math";
 import { isTnsName } from "../libs/tns";
 
 export const DEFAULT_CURRENCY = `uusd`;
 export const BASE_DENOM = `uluna`;
-export const ASSET_URL = "https://assets.terrarebels.net";
+export const ASSET_URL = "https://assets.terraclassic-community";
 export const TERRA_ADDRESS_REGEX = /(terra[0-9][a-z0-9]{38})/g;
 export const LOCALTERRA_FCD_URL = "http://localhost:3060";
 

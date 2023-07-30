@@ -2,7 +2,7 @@ import { useMemo } from "react";
 import { useQuery } from "react-query";
 import axios, { AxiosError } from "axios";
 import BigNumber from "bignumber.js";
-import { OracleParams, ValAddress } from "@terra-rebels/terra.js";
+import { OracleParams, ValAddress } from "@terraclassic-community/terra.js";
 import { useCurrentChain } from "../contexts/ChainsContext";
 import { RefetchOptions } from "./query";
 import { TerraValidator } from "../types/validator";
@@ -12,7 +12,7 @@ export const useTerraAPIURL = (network?: string) => {
   const { name } = useCurrentChain();
   return {
     mainnet: "https://phoenix-api.terra.dev",
-    classic: "https://api.terrarebels.net",
+    classic: "https://api.hexxagon.io",
     testnet: "https://pisco-api.terra.dev"
   }[network ?? name];
 };

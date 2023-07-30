@@ -6,8 +6,8 @@ import c from "classnames";
 import {
   getTxAllCanonicalMsgs,
   createLogMatcherForActions
-} from "@terra-rebels/log-finder-ruleset";
-import { TxInfo } from "@terra-rebels/terra.js";
+} from "@terraclassic-community/log-finder-ruleset";
+import { TxInfo } from "@terraclassic-community/terra.js";
 import { formatDistanceToNowStrict } from "date-fns";
 import apiClient from "../../apiClient";
 import Finder from "../../components/Finder";

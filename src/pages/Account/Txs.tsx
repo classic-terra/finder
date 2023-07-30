@@ -4,8 +4,8 @@ import {
   LogFinderAmountResult,
   getTxAmounts,
   createLogMatcherForAmounts
-} from "@terra-rebels/log-finder-ruleset";
-import { TxInfo } from "@terra-rebels/terra.js";
+} from "@terraclassic-community/log-finder-ruleset";
+import { TxInfo } from "@terraclassic-community/terra.js";
 import Pagination from "../../components/Pagination";
 import FlexTable from "../../components/FlexTable";
 import Card from "../../components/Card";

@@ -5,7 +5,7 @@ import {
   AccAddress,
   DelegateValidator,
   Validator
-} from "@terra-rebels/terra.js";
+} from "@terraclassic-community/terra.js";
 /* FIXME(terra.js): Import from terra.js */
 import { BondStatus } from "@terra-money/terra.proto/cosmos/staking/v1beta1/staking";
 import { bondStatusFromJSON } from "@terra-money/terra.proto/cosmos/staking/v1beta1/staking";

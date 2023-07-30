@@ -1,4 +1,4 @@
-import { Coin, Coins } from "@terra-rebels/terra.js";
+import { Coin, Coins } from "@terraclassic-community/terra.js";
 import { useQuery } from "react-query";
 import useLCDClient from "../hooks/useLCD";
 import useRequest from "../hooks/useRequest";

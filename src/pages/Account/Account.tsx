@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { AccAddress } from "@terra-rebels/terra.js";
+import { AccAddress } from "@terraclassic-community/terra.js";
 import NotFound from "../../components/NotFound";
 import Delegations from "./Delegations";
 import Undelegations from "./Undelegations";

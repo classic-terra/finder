@@ -1,4 +1,4 @@
-import { TxInfo } from "@terra-rebels/terra.js";
+import { TxInfo } from "@terraclassic-community/terra.js";
 import { pick, pickBy } from "lodash";
 
 interface Transaction extends TxInfo {

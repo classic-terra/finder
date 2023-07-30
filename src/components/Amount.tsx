@@ -1,5 +1,5 @@
 import { Dictionary } from "ramda";
-import { AccAddress } from "@terra-rebels/terra.js";
+import { AccAddress } from "@terraclassic-community/terra.js";
 import { Tokens } from "../hooks/cw20/useTokenBalance";
 import {
   IBCTokenList,

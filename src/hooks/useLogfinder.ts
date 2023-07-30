@@ -1,7 +1,7 @@
 import {
   createActionRuleSet,
   createAmountRuleSet
-} from "@terra-rebels/log-finder-ruleset";
+} from "@terraclassic-community/log-finder-ruleset";
 import { useCurrentChain } from "../contexts/ChainsContext";
 
 export const useLogfinderActionRuleSet = () => {

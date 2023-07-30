@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { LCDClient } from "@terra-rebels/terra.js";
+import { LCDClient } from "@terraclassic-community/terra.js";
 import { useCurrentChain } from "../contexts/ChainsContext";
 
 const useLCDClient = () => {
